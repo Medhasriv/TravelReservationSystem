@@ -9,7 +9,7 @@
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
 
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
     <title>Pet Information</title>
     <style>

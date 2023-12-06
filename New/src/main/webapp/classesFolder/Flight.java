@@ -8,7 +8,7 @@ public class Flight{
 	
 	String departLocation;
 	String arriveLocation;
-	
+	 
 	int numSeats;
 	int durationMin;
 	double price;

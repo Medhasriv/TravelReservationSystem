@@ -7,7 +7,7 @@ public class Trip{
 	
 	public Trip(ArrayList<Flight> flights) {
 		this.flights = flights;
-		this.numStops = (flights.size()-1);
+		this.numStops = (flights.size()-1); 
 	}
 	
 	public void addFlight(Flight f) {
