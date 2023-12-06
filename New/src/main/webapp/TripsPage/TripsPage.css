@@ -1,0 +1,584 @@
+@charset "UTF-8";
+
+
+@font-face{
+  font-family: Freeroad;
+  src:url(Freeroadn.ttf);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+/*  justify-content: center;
+  align-items: center;*/
+  background: rgb(46, 52, 56) ;
+}
+.bigtext{
+  font-family: Freeroad;
+}
+
+.nav-1{
+  background: rgb(0, 30, 44) ;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+
+.title{
+  color: white;
+  font-family: Freeroad ;
+  font-size: 60px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+
+}
+
+.greet{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: Freeroad ;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  margin-left: 0px;
+  
+}
+
+.title2{
+  color: white;
+  font-family: Freeroad ;
+  font-size: 30px;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+
+}
+
+
+
+.nav-2{
+  background: white ;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  height: 30px;
+  border-bottom: 1px solid rgb(221,227,234);
+}
+
+
+
+.nav-3{
+  background: white ;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  height: 40px;
+}
+
+/*.nav-6{
+  background: white ;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: 2px solid;
+  border-radius: 20px;
+  font-size: 20px;
+  height: 90%;
+}*/
+
+.left{
+  width: 100%;
+  height: 100%;
+}
+
+.b1 {
+    color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px; 
+}
+
+.b1a {
+    color: black;
+    font-size: 50px;
+    font-family: Freeroad;
+    align-self: flex-start;
+    margin-top: 0;
+    padding: 10px 0 0 10px; /*(top right bottom left) */
+}
+
+.b1b {
+    color: black;
+    height: 100px;
+    border-radius: 20px;
+    background: grey;
+    width: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-family: Freeroad;
+}
+
+/*.b1 {
+  color: black;
+  height: 25%;
+  width: 100%;
+  font-family: Freeroad;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.b1a {
+  color: black;
+  height: 100%;
+   width: 50%;   You can remove this line or adjust as needed 
+  font-size: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: Freeroad;
+}*/
+
+
+
+
+/*.b1b{
+  color: black;
+  height: 100px;
+  border-radius: 20px;
+  background: grey;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}*/
+
+.b2{
+  color: black;
+  height: 5%;
+  width: 100%;
+  font-family: Freeroad;
+/*  text-align: center;*/
+  padding-top: 20px;
+}
+
+.b3 {
+  color: black;
+  max-width: 100%;
+  height: 40vh; 
+  display: flex;
+/*  justify-content: center;
+  align-items: center;*/
+}
+
+
+
+/*.right{
+  width: 100%;
+  height: 100%;
+  background: grddeen;
+  flex-direction: column;
+  display: flex;
+
+
+}
+
+.a1{
+  color: black;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  font-family: Freeroad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.boxy{
+  background: yellow;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+
+}
+
+
+.l{
+  background: red;
+  font-family: Freeroad;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.r{
+  background: blue;
+  font-family: Freeroad;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+*/
+
+
+.a1b{
+  color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+/*  justify-content: center;
+  align-items: center;*/
+  font-family: Freeroad;
+}
+
+
+.op1 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op1:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+.op2 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op2:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+.op3 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op3:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+
+.op4 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op4:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+
+.op5 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op5:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+
+.op6 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 200%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+
+
+.op7 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op7:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+
+
+
+
+
+.op8 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op8:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+
+
+
+
+
+
+
+.op9 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op9:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-4{
+  margin-top: 30px;
+  display: flex;
+/*  justify-content: center;
+  align-items: center;*/
+  width: 90%;
+  height: 600px;
+  background: rgb(0,84,180);
+
+}
+
+/*.nav-5{
+  display: flex;
+  width: 90%;
+  height: 80%;
+  background: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+*/
+
+
+.nav-5 {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    background: white;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;     
+
+
+input{
+  color: black;
+  font-family: Freeroad;
+  padding: 8px;
+  width: 90%;
+  height: 85%;
+  border: 1px solid #ccc;   
+  border-radius: 5px;   
+  box-sizing: border-box; 
+}
+
+/*
+.depdes{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.ddate{
+ width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.rdate{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}*/
+
+
+
+
+
+
+
+
+/*button {
+  background: none;
+  color: black;
+  padding-bottom: 30px;
+  border-radius: 5px;   
+  border: 1px solid white; 
+}*/
+.nav-8{
+  display: flex;
+  width: 100%;
+  height: 15%;
+  background: white;
+  font-family: Freeroad;
+  font-size: 35px;
+}
+
+.nav-9{
+  display: flex;
+  width: 100%;
+  height: 15%; 
+  background: white;
+  font-family: Freeroad;
+  margin-top: 30px;
+/*  justify-content: center;
+  align-items: center;*/
+}
+
+
+/*
+.search {
+  background: rgb(0, 84, 180);
+  width: 30%;
+  height: 50%;
+  justify-content: center;
+  padding-top: 15px;
+  color: white;
+  font-family: Freeroad;
+  margin-left: auto;   
+  margin-right: 20px; 
+}
+*/
