@@ -1,4 +1,7 @@
+package com.cs336.pkg;
+
 import java.time.LocalDateTime;
+//import java.util.ArrayList;
 
 public class Flight{
 	String flightNo;
@@ -29,4 +32,17 @@ public class Flight{
 		this.airlinecompany = airlinecompany;
 	}
 	
+	
+	public String getflightNo() {
+		   return flightNo;
+	}
+	
+	public LocalDateTime getDeparture() {
+		   return departDateTime;
+	}
+	
+	public String getDestination() {
+		   return arriveLocation;
+	}
 }
+	

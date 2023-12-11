@@ -9,8 +9,8 @@
 body{
   display: flex;
   flex-direction: column;
-/*  justify-content: center;
-  align-items: center;*/
+  justify-content: center;
+  align-items: center;
   background: rgb(46, 52, 56) ;
 }
 .bigtext{
@@ -98,7 +98,7 @@ body{
   height: 40px;
 }
 
-/*.nav-6{
+.nav-6{
   background: white ;
   width: 90%;
   display: flex;
@@ -110,69 +110,53 @@ body{
   border-radius: 20px;
   font-size: 20px;
   height: 90%;
-}*/
+}
 
 .left{
   width: 100%;
   height: 100%;
 }
 
-.b1 {
-    color: black;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px; 
-}
-
-.b1a {
-    color: black;
-    font-size: 50px;
-    font-family: Freeroad;
-    align-self: flex-start;
-    margin-top: 0;
-    padding: 10px 0 0 10px; /*(top right bottom left) */
-}
-
-.b1b {
-    color: black;
-    height: 100px;
-    border-radius: 20px;
-    background: grey;
-    width: 100px;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    font-family: Freeroad;
-}
-
-/*.b1 {
-  color: black;
-  height: 25%;
-  width: 100%;
-  font-family: Freeroad;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
-}
-
-.b1a {
+.b1{
   color: black;
   height: 100%;
-   width: 50%;   You can remove this line or adjust as needed 
+  width: 50%;
+  font-size: 50px;
+  font-family: Freeroad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.b1a{
+display: flex;
+  width: 1000%;
+  height: 100%;
+/*  background: white;*/
+  font-family: Freeroad;
+  font-size: 50px;
+  padding-left: 30px;
+  padding-top: 50px;
+/*  color: black;
+  height: 90%;
+  width: 80%;
   font-size: 50px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: left;
   align-items: flex-start;
-  font-family: Freeroad;
-}*/
+  font-family: Freeroad;*/
+}
 
+.horizontal-line {
+width: 80%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  }
 
-
-
-/*.b1b{
+.b1b{
   color: black;
   height: 100px;
   border-radius: 20px;
@@ -182,29 +166,30 @@ body{
   justify-content: center;
   align-items: center;
   font-family: Freeroad;
-}*/
+}
 
 .b2{
   color: black;
   height: 5%;
   width: 100%;
   font-family: Freeroad;
-/*  text-align: center;*/
+  text-align: center;
   padding-top: 20px;
 }
+
 
 .b3 {
   color: black;
   max-width: 100%;
   height: 40vh; 
   display: flex;
-/*  justify-content: center;
-  align-items: center;*/
+  justify-content: center;
+  align-items: center;
 }
 
 
-
-/*.right{
+/*
+.right{
   width: 100%;
   height: 100%;
   background: grddeen;
@@ -257,7 +242,7 @@ body{
   align-items: center;
   text-align: center;
 }
-*/
+
 
 
 .a1b{
@@ -266,10 +251,11 @@ body{
   width: 100%;
   display: flex;
   flex-direction: column;
-/*  justify-content: center;
-  align-items: center;*/
+  justify-content: center;
+  align-items: center;
   font-family: Freeroad;
 }
+*/
 
 
 .op1 {
@@ -453,48 +439,29 @@ body{
 
 
 
-
-
-
-
-
-
-
-
 .nav-4{
   margin-top: 30px;
   display: flex;
-/*  justify-content: center;
-  align-items: center;*/
+  justify-content: center;
+  align-items: center;
   width: 90%;
   height: 600px;
   background: rgb(0,84,180);
 
 }
-
-/*.nav-5{
+.nav-5{
   display: flex;
   width: 90%;
   height: 80%;
   background: white;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
-*/
 
 
-.nav-5 {
-    display: flex;
-    width: 90%;
-    height: 80%;
-    background: white;
-    flex-direction: column;
-    justify-content: flex-start; 
-    align-items: flex-start;     
 
-
-input{
+/*input{
   color: black;
   font-family: Freeroad;
   padding: 8px;
@@ -503,10 +470,10 @@ input{
   border: 1px solid #ccc;   
   border-radius: 5px;   
   box-sizing: border-box; 
-}
+}*/
 
-/*
-.depdes{
+
+/*.depdes{
   width: 100%;
   height: 100%;
   display: flex;
@@ -564,21 +531,11 @@ input{
   background: white;
   font-family: Freeroad;
   margin-top: 30px;
-/*  justify-content: center;
-  align-items: center;*/
-}
-
-
-/*
-.search {
-  background: rgb(0, 84, 180);
-  width: 30%;
-  height: 50%;
   justify-content: center;
-  padding-top: 15px;
-  color: white;
-  font-family: Freeroad;
-  margin-left: auto;   
-  margin-right: 20px; 
+  align-items: center;
 }
-*/
+
+
+
+
+

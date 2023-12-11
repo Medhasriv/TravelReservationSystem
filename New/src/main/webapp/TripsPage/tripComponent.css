@@ -1,0 +1,41 @@
+/* Style for the outer container */
+.tripComponent {
+    width: 50%; /* Adjust the width as per your preference */
+    margin: auto;
+    background-color: #f2f2f2; /* Add a background color */
+    padding: 10px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Style for the title */
+.tripComponent h2 {
+    color: #333; /* Dark text color */
+    font-size: 18px; /* Adjust the font size */
+    margin-bottom: 10px; /* Add margin below the title */
+}
+
+/* Style for the number of stops paragraph */
+.tripComponent p {
+    color: #666; /* Slightly darker text color */
+    font-size: 14px; /* Adjust the font size */
+    margin-bottom: 8px; /* Add margin below the paragraph */
+}
+
+/* Style for the flights list */
+.tripComponent .flights-list {
+    margin-top: 10px; /* Add margin above the flights list */
+}
+
+/* Style for the flight items in the list */
+.tripComponent .flight-items li {
+    list-style-type: none; /* Remove list bullets */
+    margin-bottom: 5px; /* Add margin between list items */
+    font-size: 14px; /* Adjust the font size */
+}
+
+/* Add this style to center the tripComponent */
+.nav-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;

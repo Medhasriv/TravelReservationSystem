@@ -3,6 +3,13 @@
 <%@ page import="java.io.*,java.util.*,java.sql.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
 
+<%@ page import="com.cs336.pkg.Flight" %>
+<%@ page import="com.cs336.pkg.Trip" %>
+
+
+<%@ page import="java.time.LocalDateTime" %>
+<%@ page import="java.time.format.DateTimeFormatter" %>
+
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -65,9 +72,12 @@
 	    <div class = "nav-4">
 	
 		<div class = "nav-5">
+			<div class="horizontal-line"></div>
 			<div class = "b1">
-			    <div class = "b1a">Your Trips!</div> 
-			</div> 
+			    <div class = "b1a">Your Trips</div> 
+			</div>
+			
+			<%@ include file="tripComponent.jsp" %>
 		</div>
 	<!--
 	<div class = "nav-6"></div>
