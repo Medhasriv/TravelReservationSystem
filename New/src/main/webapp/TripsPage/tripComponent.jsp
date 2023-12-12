@@ -35,7 +35,9 @@
 	                for (Flight flight : Tripflights) { 
 	                %>
 	                    <li>Flight <%= flight.getflightNo() %>: <br>
-	                    	<%= flight.getDepartureTime() %> FROM <%= flight.getdepartLocation() %> TO <%= flight.getArrivalTime() %> : <%= flight.getarriveLocation() %></li>
+	                    	<%= flight.departTimeToString() %> - <%= flight.getdepartLocation() %> <br>
+	                    	<%= flight.arrivalTimeToString() %> - <%= flight.getarriveLocation() %></li>
+	                <br>
 	                <% } %>
 	            </ul>
 	        </div>
