@@ -37,11 +37,19 @@ public class Flight{
 		   return flightNo;
 	}
 	
-	public LocalDateTime getDeparture() {
+	public LocalDateTime getDepartureTime() {
 		   return departDateTime;
 	}
 	
-	public String getDestination() {
+	public LocalDateTime getArrivalTime() {
+		   return arriveDateTime;
+	}
+	
+	public String getdepartLocation() {
+		   return departLocation;
+	}
+	
+	public String getarriveLocation() {
 		   return arriveLocation;
 	}
 }
