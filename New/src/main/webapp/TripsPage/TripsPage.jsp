@@ -70,15 +70,36 @@
 	    
 	    <div class = "nav-3"></div>
 	    <div class = "nav-4">
-	
 		<div class = "nav-5">
 			<div class="horizontal-line"></div>
-			<div class = "b1">
-			    <div class = "b1a">Your Trips</div> 
-			</div>
+			<div class = "b1a">Your Trips</div> 
 			
-			<%@ include file="tripComponent.jsp" %>
-		</div>
+			<%
+			    // Example usage
+			    ArrayList<Flight> flights = new ArrayList<Flight>();
+			    String departDateTimeStr = "2023-12-31T12:30:00"; // Replace with your actual date and time
+			    String arriveDateTimeStr = "2023-12-31T15:45:00"; // Replace with your actual date and time
+			
+			    // Parse date-time strings into LocalDateTime objects
+			    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
+			    LocalDateTime departDateTime = LocalDateTime.parse(departDateTimeStr, formatter);
+			    LocalDateTime arriveDateTime = LocalDateTime.parse(arriveDateTimeStr, formatter);
+			
+			    flights.add(new Flight("0000", departDateTime, arriveDateTime, "New York", "Washington DC", 100, 60, 123.45, "United"));
+			    flights.add(new Flight("0001", departDateTime, arriveDateTime, "Miami", "San Francisco", 200, 90, 543.21, "American Airlines"));
+			
+			    Trip sampleTrip = new Trip(flights);
+			    request.setAttribute("trip", sampleTrip);
+			%>
+			
+			
+			<div class=displayTripComponents>
+				<%@ include file="tripComponent.jsp" %>
+			</div>	
+			
+			
+			
+			
 	<!--
 	<div class = "nav-6"></div>
 	<div class="left"></div>

@@ -23,11 +23,20 @@ public class Trip{
 	}
 	
 	public ArrayList<Flight> getFlights() {
-		   return flights;
+		   return this.flights;
 	}
 	
 	public int getNumStops() {
-		   return numStops;
+		   return this.numStops;
+	}
+	
+	public String tripHeader() {
+		if(flights.size() == 0) {
+			return "No flights included";
+		}
+		String startLocation = this.getFlights().get(0).departLocation;
+		String endLocation = this.getFlights().get(this.flights.size()-1).arriveLocation;
+		return (startLocation + " - " + endLocation);
 	}
 	
 }

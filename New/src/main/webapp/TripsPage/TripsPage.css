@@ -117,7 +117,7 @@ body{
   height: 100%;
 }
 
-.b1{
+/*.b1{
   color: black;
   height: 100%;
   width: 50%;
@@ -127,16 +127,16 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: row;
-}
+}*/
 .b1a{
 display: flex;
   width: 1000%;
-  height: 100%;
+  height: 20%;
 /*  background: white;*/
   font-family: Freeroad;
   font-size: 50px;
   padding-left: 30px;
-  padding-top: 50px;
+  padding-top: 30px;
 /*  color: black;
   height: 90%;
   width: 80%;
@@ -155,6 +155,13 @@ width: 80%;
   top: 45%;
   transform: translateY(-50%);
   }
+  
+ .displayTripComponents{
+	 display: flex;
+	 color: black;
+	 width: 100%;
+	 height: 100%;
+ }
 
 .b1b{
   color: black;

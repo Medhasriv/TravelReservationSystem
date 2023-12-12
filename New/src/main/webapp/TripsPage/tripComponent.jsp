@@ -10,35 +10,36 @@
 <%
    Trip trip = (Trip)request.getAttribute("trip");
    if (trip == null) {
-      out.println("DEBUG: Trip is null");
+/*       out.println("DEBUG: Trip is null"); */
       trip = new Trip();
+	
    } else {
-      out.println("DEBUG: Trip is not null");
+      /* out.println("DEBUG: Trip is not null"); */
    }
 %>
-
 <html>
-<head>
-    <title>Trip Information</title>
-    	<meta charset="UTF-8">
-		<link href="tripComponent.css" rel="stylesheet">
-</head>
-<body>
-    <div class="tripComponent">
-        <h2>Trip Information</h2>
-        <p>Number of Stops: <%= trip.getNumStops() %></p>
-        <div class="flights-list">
-            <h3>Flights</h3>
-            <ul class="flight-items">
-                <% 
-                ArrayList<Flight> flights = trip.getFlights();
-                for (Flight flight : flights) { 
-                %>
-                    <li>Flight <%= flight.getflightNo() %>: <%= flight.getDeparture() %> to <%= flight.getDestination() %></li>
-                <% } %>
-            </ul>
-        </div>
-    </div>
-
-</body>
+	<head>
+	    <title>Trip Information</title>
+	    	<meta charset="UTF-8">
+			<link href="tripComponent.css" rel="stylesheet">
+	</head>
+	<body>
+	    <div class="tripComponent">
+	        <h2><%= trip.tripHeader() %></h2>
+	        <p>Number of Stops: <%= trip.getNumStops() %></p>
+	        <div class="flights-list">
+	            <h3>Flights</h3>
+	            <ul class="flight-items">
+	                <% 
+	                ArrayList<Flight> Tripflights = trip.getFlights();
+	                for (Flight flight : Tripflights) { 
+	                %>
+	                    <li>Flight <%= flight.getflightNo() %>: <br>
+	                    	<%= flight.getDeparture() %> FROM flight.getDestination() TO <%= flight.getDestination() %></li>
+	                <% } %>
+	            </ul>
+	        </div>
+	    </div>
+	</body>
 </html>
+

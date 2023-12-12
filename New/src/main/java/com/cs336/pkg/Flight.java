@@ -17,7 +17,7 @@ public class Flight{
 	double price;
 	String airlinecompany;
 	
-	public Flight(String flightNo, LocalDateTime departDateTime, LocalDateTime arriveDateTime, String departLocation, String arriveLocation, int numSeats, int durationMin, double price, String airlinecompany) {
+	public Flight(String flightNo , LocalDateTime departDateTime, LocalDateTime arriveDateTime, String departLocation, String arriveLocation, int numSeats, int durationMin, double price, String airlinecompany) {
 		this.flightNo = flightNo;
 		
 		this.departDateTime = departDateTime;
