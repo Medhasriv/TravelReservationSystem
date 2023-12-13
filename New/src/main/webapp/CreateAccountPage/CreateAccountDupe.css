@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+
+@font-face{
+  font-family: Freeroad;
+  src:url(Freeroadn.ttf);
+}
+
+body {
+  background: rgb(0, 30, 44) ;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh; 
+  flex-direction: column;
+}
+
+.name{
+  color: white;
+  font-family: Freeroad;
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+#Email{
+  width: 250px;
+  height: 30px;
+  margin-left: 19px;
+  background: rgb(247, 248, dd249);
+  border: none;
+  font-family: Freeroad;
+
+}
+
+.Input-Box {
+  height: 500px;
+  width: 400px;
+  background: rgb(0, 30, 48) ;
+  border: 1.5px solid rgb(61, 70, 97); 
+  border-radius: 8px;
+
+}
+
+.Create-Box{
+  margin-top: 12px;
+  height: 100px;
+  width: 400px;
+  background: rgb(0, 30, 48) ;
+  border: 1.5px solid rgb(61, 70, 97); 
+  border-radius: 8px;
+
+}
+
+
+.Header{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+.Logo{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px;
+  font-family: Freeroad;
+  }
+
+.Input{
+  justify-content: center;
+  justify-items: center;
+  display: flex;
+  height: 250px;
+  width: 400px;
+  margin-top: -30px;
+}
+
+
+
+#username {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px;
+  border-color: rgb(72 80 107) ;
+  width: 320px;
+  font-size: 20px;
+  color: black ;
+  margin-top: 1px;
+font-family: Freeroad;
+}
+
+#password {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px;
+  border-color: rgb(72 80 107) ;
+  width: 320px;
+  font-size: 20px;
+  margin-top: 20px;
+font-family: Freeroad;
+}
+
+
+
+.login {
+  background-color: rgb(4 34 95);
+  border: none;
+  margin-left: 40px;
+  width: 200px;
+  margin-top: 10px;
+  
+  height: 25px;
+  color: white;
+  font-size: 20px;
+  border-radius: 4px;
+  font-family: Freeroad;
+}
+
+.linebox{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+.line{
+  width: 220px;
+  height: 1px;
+  background-color: rgb(72 80 107);
+
+}
+
+.Create-Box{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.create{
+  margin-top: 40px;
+  color: rgb(108 187 240);
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Freeroad;
+  }
+
+
+.tag1{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.tag2{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-left: 50px;
+}
+.tag3{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-left: 50px;
+}
+.tag4{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-left: 50px;
+}
+.tag5{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-left: 50px;
+}
+.tag6{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-left: 50px;
+}
+#Name{
+  width: 250px;
+  height: 30px;
+  margin-left: 19px;
+  background: rgb(247, 248, dd249);
+  border: none;
+  font-family: Freeroad;
+
+}
+
+#Password{
+  width: 250px;
+  height: 30px;
+  margin-left: 19px;
+  background: rgb(247, 248, dd249);
+  border: none;
+  font-family: Freeroad;
+
+}
+
+#Password{
+  width: 250px;
+  height: 30px;
+  margin-left: 19px;
+  background: rgb(247, 248, dd249);
+  border: none;
+  font-family: Freeroad;
+
+}
+
+
+#Username{
+  width: 250px;
+  height: 30px;
+  margin-left: 19px;
+  background: rgb(247, 248, dd249);
+  border: none;
+  font-family: Freeroad;
+
+}
+
+#DOB{
+  width: 250px;
+  height: 30px;
+  margin-left: 19px;
+  background: rgb(247, 248, dd249);
+  border: none;
+  font-family: Freeroad;
+
+}
+#Phone{
+  width: 250px;
+  height: 30px;
+  margin-left: 19px;
+  background: rgb(247, 248, dd249);
+  border: none;
+  font-family: Freeroad;
+
+}
+
+

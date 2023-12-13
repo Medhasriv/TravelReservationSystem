@@ -1,0 +1,123 @@
+body {
+  background: rgb(0, 12, 44);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh; 
+  flex-direction: column;
+  color: white;
+}
+
+
+.Input-Box {
+  height: 500px;
+  width: 400px;
+  background: rgb(14, 27, 59);
+  border: 1.5px solid rgb(61, 70, 97); 
+  border-radius: 8px;
+
+}
+
+.Create-Box{
+  margin-top: 12px;
+  height: 100px;
+  width: 400px;
+  background: rgb(14, 27, 59);
+  border: 1.5px solid rgb(61, 70, 97); 
+  border-radius: 8px;
+
+}
+
+
+.Header{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+.Logo{
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Input{
+  justify-content: center;
+  justify-items: center;
+  display: flex;
+  height: 250px;
+  width: 400px;
+  margin-top: 10px;
+}
+
+
+
+#username {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px;
+  border-color: rgb(72 80 107) ;
+  width: 320px;
+  font-size: 20px;
+  color: black ;
+  margin-top: 25px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#password {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px;
+  border-color: rgb(72 80 107) ;
+  width: 320px;
+  font-size: 20px;
+  margin-top: 20px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.login {
+  background-color: rgb(4 34 95);
+  border: none;
+  margin-left: 10px;
+  margin-top: 30px;
+  width: 290px;
+  height: 50px;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.linebox{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+.line{
+  width: 220px;
+  height: 1px;
+  background-color: rgb(72 80 107);
+
+}
+
+.Create-Box{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.create{
+  margin-top: 35px;
+  color: rgb(108 187 240);
+  font-size: 18px;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

@@ -14,7 +14,7 @@
     String pass = request.getParameter("Password");
 
     ApplicationDB db = new ApplicationDB();
-    Connection con = db.getConnection();
+    Connection con = db.getConnection(db.getInputDB());
     
     if (con != null) {
         try {
