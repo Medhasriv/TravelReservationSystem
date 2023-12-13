@@ -99,6 +99,7 @@ DROP TABLE IF EXISTS `Ticket`;
 CREATE TABLE `Ticket` (
 `username` varchar(50) DEFAULT "",
 `TicketNumber` int NOT NULL DEFAULT 0,
+`FlightNumber`int NOT NULL 0;
 `FlightDuration` datetime DEFAULT NULL,
 `PurchaseDate` date DEFAULT NULL,
 `DepartureLocation` varchar(50) NOT NULL DEFAULT '',

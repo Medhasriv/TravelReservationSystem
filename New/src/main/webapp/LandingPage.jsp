@@ -153,7 +153,7 @@
 		Statement stmt = con.createStatement();
 		
 		ResultSet rs;
-		rs = stmt.executeQuery("");
+		rs = stmt.executeQuery("select * from Flight t, AssociatedWith a, ticket t, where t.departure=`"+ Departure +"` and t.`"+ +""++"");
 		
 		if(rs.next()){
 			%>
