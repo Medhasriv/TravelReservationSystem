@@ -42,7 +42,7 @@ public class Flight{
 	}
 	
 	public LocalDateTime getArrivalTime() {
-		   return arriveDateTime;
+		return arriveDateTime;
 	}
 	
 	public String getdepartLocation() {
@@ -51,6 +51,14 @@ public class Flight{
 	
 	public String getarriveLocation() {
 		   return arriveLocation;
+	}
+	
+	public String arrivalTimeToString() {
+		return arriveDateTime.toString().replace("T", " ");
+	}
+	
+	public String departTimeToString() {
+		return departDateTime.toString().replace("T", " ");
 	}
 }
 	

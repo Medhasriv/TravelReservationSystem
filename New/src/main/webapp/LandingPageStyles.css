@@ -1,0 +1,513 @@
+@charset "UTF-8";
+
+
+@font-face{
+  font-family: Freeroad;
+  src:url(Freeroadn.ttf);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(46, 52, 56) ;
+}
+.bigtext{
+  font-family: Freeroad;
+}
+
+.nav-1{
+  background: rgb(0, 30, 44) ;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+
+.title{
+  color: white;
+  font-family: Freeroad ;
+  font-size: 60px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  
+}
+a.title{
+  text-decoration: none;
+  
+}
+
+.greet{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: Freeroad ;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  margin-left: 0px;
+  
+}
+
+.title2{
+  color: white;
+  font-family: Freeroad ;
+  font-size: 30px;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+
+}
+
+
+
+.nav-2{
+  background: white ;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  height: 30px;
+  border-bottom: 1px solid rgb(221,227,234);
+}
+
+
+
+.nav-3{
+  background: white ;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  height: 40px;
+}
+
+
+
+
+
+.op1 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op1:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+.op2 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op2:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+.op3 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op3:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+
+.op4 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op4:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+
+.op5 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op5:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+
+.op6 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 200%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+
+
+.op7 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op7:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+
+
+
+
+
+.op8 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op8:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+
+
+
+
+
+
+
+.op9 {
+  font-size: 15px;
+  font-family: ZwoWebPro-Semibold;
+  color: #565a5d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Freeroad;
+}
+
+
+.op9:hover {
+  color: rgb(0, 52, 224);
+  border-bottom: 3px solid rgb(0, 52, 224);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.searchbox{
+  background: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+}
+
+
+.bigtext {
+  font-size: 40px;
+  text-align: left;
+
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.nav-4{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 400px;
+  background: rgb(0,84,180);
+
+}
+.nav-5{
+  display: flex;
+  width: 90%;
+  height: 70%;
+  background: white;
+  flex-direction: column;
+}
+.nav-6{
+  display: flex;
+  width: 90%;
+  height: 15%;
+  background: white;
+  font-family: Freeroad;
+  font-size: 35px;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+.nav-7{
+  display: flex;
+  width: 30%;
+  height: 15%;
+  background: white;
+  font-family: Freeroad;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+
+.dep{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.des{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+input{
+  color: black;
+  font-family: Freeroad;
+  padding: 8px;
+  width: 90%;
+  height: 85%;
+  border: 1px solid #ccc;   
+  border-radius: 5px;   
+  box-sizing: border-box; 
+}
+
+
+.depdes{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.ddate{
+ width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.rdate{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+/*button {
+  background: none;
+  color: black;
+  padding-bottom: 30px;
+  border-radius: 5px;   
+  border: 1px solid white; 
+}*/
+
+
+.nav-8{
+  display: flex;
+  width: 100%;
+  height: 15%;
+  background: white;
+  font-family: Freeroad;
+  font-size: 35px;
+  padding-top: 10px;
+}
+
+.nav-9{
+  display: flex;
+  width: 100%;
+  height: 15%; 
+  background: white;
+  font-family: Freeroad;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.search {
+  background: rgb(0, 84, 180);
+  width: 20%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 12px;
+  color: white;
+  font-family: Freeroad;
+  margin-left: auto;   
+  margin-right: 20px; 
+}
+
+
+ /* Dropdown Button */
+.dropbtn {
+  background: rgb(0, 84, 180);
+  color: white;
+  padding: 14px;
+  font-size: 14px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 10%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
