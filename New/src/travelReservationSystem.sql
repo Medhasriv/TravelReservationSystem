@@ -15,7 +15,7 @@ PRIMARY KEY (`FlightNumber`)
 -- LOCK TABLES `Flight` WRITE;
 -- /*!40000 ALTER TABLE `Flight` DISABLE KEYS */;
 -- INSERT INTO `Flight` VALUES 
--- ('12425','125', '2022-08-13', 'Domestic'),
+-- ('124256','125', '2022-08-13', 'Domestic'),
 -- ('126525','185', '2022-08-13', 'International'),
 -- ('124325','176', '2022-08-13', 'International'),
 -- ('174325','140', '2022-08-13', 'Domestic');
@@ -72,7 +72,7 @@ PRIMARY KEY (`AirlineID`, `FlightNumber`)
 -- LOCK TABLES `AssociatedWith` WRITE;
 -- /*!40000 ALTER TABLE `AssociatedWith` DISABLE KEYS */;
 -- INSERT INTO `AssociatedWith` VALUES 
--- ('GW','12425'),
+-- ('GW','124256'),
 -- ('HQ','126525'),
 -- ('UA','124325'),
 -- ('PA','174325');
@@ -115,10 +115,10 @@ INDEX idx_ticketNumber(`ticketNumber`)
 -- LOCK TABLES `Ticket` WRITE;
 -- /*!40000 ALTER TABLE `Ticket` DISABLE KEYS */;
 -- INSERT INTO `Ticket` VALUES 
--- (321642321, 56317, '', '2022-08-13', '', ),
--- (213590253, 71893, '', '2022-08-13', '', ),
--- (721895063, 62978, '', '2022-08-13', '', ),
--- (712385909, 65327, '', '2022-08-13', '', );
+-- ("", 56317, '124256', '2022-08-13', 'First', ),
+-- ("", 71893, '126525', '2022-08-13', 'Business', ),
+-- ("", 62978, '124325', '2022-08-13', 'Economy', ),
+-- ("", 65327, '174325', '2022-08-13', 'Economy', );
 -- /*!40000 ALTER TABLE `Ticket` ENABLE KEYS */;
 -- UNLOCK TABLES;
 
