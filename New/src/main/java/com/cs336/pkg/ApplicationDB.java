@@ -12,7 +12,8 @@ public class ApplicationDB {
 //		local host port number is subject to change depending on MySQL configurations
 //		VVV jdbc:mysql://localhost:[Port Number]/[SQL FILENAME] VVV
 		this.TravelDB = "jdbc:mysql://localhost:3006/travelReservationSystem";
-		this.InputDB = "jdbc:mysql://localhost:3006/Inputs";
+		this.InputDB = "jdbc:mysql://localhost:3006/travelReservationSystem";
+//		this.InputDB = "jdbc:mysql://localhost:3006/Inputs";
 	}
 
 	public Connection getConnection(String Ref){

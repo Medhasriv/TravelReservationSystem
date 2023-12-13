@@ -54,7 +54,7 @@
 					<div class="name">Email</div>
 					<input type="text" id="Email" name="Email"
 						placeholder="Enter email address"> <input type="submit"
-						class="login" value="Log in">
+						class="login" value="Create Account">
 				</div>
 
 			</form>

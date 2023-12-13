@@ -80,7 +80,7 @@
 				Account</a>
 			<p></p>
 			Back to <a href='../LoginPage/LoginPage.jsp'
-				style="color: white; text-decoration: none">Login</a>
+				style="color: white; text-decoration: none">Create Account</a>
 		</div>
 		<%
 		    } else {

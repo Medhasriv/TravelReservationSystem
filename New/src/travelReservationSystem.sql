@@ -1,19 +1,7 @@
+DROP DATABASE IF EXISTS `TravelReservationSystem`;
+-- Note that the preset values need to exist here before submitting.
 CREATE DATABASE IF NOT EXISTS `TravelReservationSystem`;
 USE `TravelReservationSystem`;
-
--- -----------------airlinecompany-------------------------------------
--- Server version 5.6.35-log
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
 
 DROP TABLE IF EXISTS `Flight`;
 CREATE TABLE `Flight` (
@@ -34,27 +22,27 @@ PRIMARY KEY (`FlightNumber`)
 -- /*!40000 ALTER TABLE `Flight` ENABLE KEYS */;
 -- UNLOCK TABLES;
 
-DROP TABLE IF EXISTS `Customer`;
-CREATE TABLE `Customer` (
-`Email` varchar(100) NOT NULL,
-`AccountNumber` int NOT NULL,
-`DOB` datetime DEFAULT NULL,
-`Phone` int NOT NULL DEFAULT 0,
-`Name` varchar(50) DEFAULT '',
-`Password` varchar(50) DEFAULT '',
-PRIMARY KEY (`Email`, `AccountNumber`),
-Index idx_AccountNumber(`AccountNumber`)
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+`username` varchar(50) NOT NULL DEFAULT '',
+`password` varchar(50) NOT NULL DEFAULT '',
+`phone` varchar(50) DEFAULT NULL,
+`dob` datetime DEFAULT NULL,
+`name` varchar(50) DEFAULT NULL,
+`email` varchar(100) DEFAULT NULL,
+PRIMARY KEY (`username`)
+-- Index idx_AccountNumber(`us`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-LOCK TABLES `Customer` WRITE;
-/*!40000 ALTER TABLE `Customer` DISABLE KEYS */;
-INSERT INTO `Customer` VALUES 
-('uriowpjl751@yhn.com', 		321642321 , '2022-08-13' , 0, 'Justine Emilia', 'password'),
-('jfdksalbdv4321798@yhn.com', 	213590253 , '2022-08-13' , 0, 'Brigitte Mafalda', 'passworda'),
-('dhasjklg12352@yhn.com', 		721895063 , '2022-08-13' , 0, 'Hortensia Matilde', 'passwordb'),
-('fdsakl12334@yhn.com',			712385909 , '2022-08-13' , 0, 'Eseoghene Helene', 'passwordc');
-/*!40000 ALTER TABLE `Customer` ENABLE KEYS */;
-UNLOCK TABLES;
+-- LOCK TABLES `users` WRITE;
+-- /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+-- INSERT INTO `users` VALUES 
+-- ('uriowpjl751@yhn.com', 		321642321 , '2022-08-13' , 0, 'Justine Emilia', 'password'),
+-- ('jfdksalbdv4321798@yhn.com', 	213590253 , '2022-08-13' , 0, 'Brigitte Mafalda', 'passworda'),
+-- ('dhasjklg12352@yhn.com', 		721895063 , '2022-08-13' , 0, 'Hortensia Matilde', 'passwordb'),
+-- ('fdsakl12334@yhn.com',			712385909 , '2022-08-13' , 0, 'Eseoghene Helene', 'passwordc');
+-- /*!40000 ALTER TABLE `users` ENABLE KEYS */;
+-- UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `AirlineCompany`;
 CREATE TABLE `AirlineCompany` (
@@ -109,7 +97,7 @@ PRIMARY KEY (`AirportID`)
 
 DROP TABLE IF EXISTS `Ticket`;
 CREATE TABLE `Ticket` (
-`AccountNumber` int DEFAULT 0,
+`username` varchar(50) DEFAULT "",
 `TicketNumber` int NOT NULL DEFAULT 0,
 `FlightDuration` datetime DEFAULT NULL,
 `PurchaseDate` date DEFAULT NULL,
@@ -118,8 +106,8 @@ CREATE TABLE `Ticket` (
 `Destination` varchar(50) NOT NULL DEFAULT '',
 `TotalPrice` int NOT NULL DEFAULT 0,
 `Class` varchar(20) NOT NULL DEFAULT '',
-PRIMARY KEY (`AccountNumber`, `ticketNumber`),
-FOREIGN KEY (`AccountNumber`) REFERENCES `Customer`(`AccountNumber`),
+PRIMARY KEY (`username`, `ticketNumber`),
+FOREIGN KEY (`username`) REFERENCES `users`(`username`),
 INDEX idx_ticketNumber(`ticketNumber`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

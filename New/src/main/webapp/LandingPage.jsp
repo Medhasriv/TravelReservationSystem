@@ -87,60 +87,94 @@
 			%>
 			<div class="nav-7">
 				<div class="dropdown">
-					<button class="dropbtn"
-						onclick="toggleDropdown('tripTypeDropdown')"><%=selectedTripType%></button>
-					<div id="tripTypeDropdown" class="dropdown-content">
-						<a href="#" onclick="selectOption('One Way', 'tripTypeDropdown')">One-Way</a>
-						<a href="#"
-							onclick="selectOption('Round Trip', 'tripTypeDropdown')">Round
-							Trip</a>
-					</div>
+					<select id="tripTypeDropdown" class="dropbtn" name="tripTypeDropdown">
+						<!-- <option value="javascript:location:reload()">Trip Type</option> -->
+						<option value="One Way"> One Way
+						<option value="Round Trip"> Round Trip
+					</select>
 				</div>
 				<div class="dropdown">
-					<button class="dropbtn" onclick="toggleDropdown('classDropdown')"><%=selectedClass%></button>
-					<div id="classDropdown" class="dropdown-content">
-						<a href="#" onclick="selectOption('Economy', 'classDropdown')">Economy</a>
-						<a href="#" onclick="selectOption('Business', 'classDropdown')">Business</a>
-						<a href="#" onclick="selectOption('First Class', 'classDropdown')">First
-							Class</a>
-					</div>
+					<select id="classDropdown" class="dropbtn" name="classDropdown">
+						<!-- <option value="javascript:location:reload()">Trip Type</option> -->
+						<option value="Economy"> Economy
+						<option value="Business"> Business
+						<option value="First"> First
+					</select>
 				</div>
 				<!--           <button type="b">1 Traveler</button> //IMPLEMENT LATER, # OF TRAVELERS, NOT NEEDED FOR NOW -->
 			</div>
-
-
 			<div class="nav-8">
 				<div class="dep">
-					<input type="text" id="Password" name="Password"
+					<input type="text" id="departureCity" name="departureCity"
 						placeholder="Departure City">
 				</div>
 				<div class="des">
-					<input type="text" id="Password" name="Password"
+					<input type="text" id="destinationCity" name="destinationCity"
 						placeholder="Destination City">
 				</div>
 				<div class="depdes">
 					<div class="ddate">
-						<input type="text" id="Password" name="Password"
+						<input type="text" id="departureDate" name="departureDate"
 							placeholder="Depart MM/DD/YY">
 					</div>
 					<div class="rdate">
-						<input type="text" id="Password" name="Password"
+						<input type="text" id="returnDate" name="returnDate"
 							placeholder="Return MM/DD/YY">
 					</div>
 				</div>
 			</div>
-
-
 			<div class="nav-9">
-				<button class="search" onclick="search()">Search</button>
+				<input type="submit" class="search" value="search">
+				<!-- <button class="search" onclick="search()">Search</button> -->
 			</div>
-
-
 		</div>
 	</div>
+	
+	<div>
+	<%
+		
+		
+
+		String Departure = request.getParameter("departureCity"); 
+		String Destination = request.getParameter("destinationCity"); 
+		String tripType = request.getParameter("tripTypeDropdown");
+		String travelClass = request.getParameter("classDropdown");
+		String departureDate = request.getParameter("departureDate");
+		String returnDate = request.getParameter("returnDate");
+		
+		/* 
+		String DepartDate = request.getParameter();
+		String ArrivalDate = request.getParameter(); */
+		String Trip = request.getParameter(tripType);
+		String TravelClass = request.getParameter(travelClass);
+		
+		ApplicationDB db = new ApplicationDB();
+		Connection con = db.getConnection(db.getTravelDB());
+		Statement stmt = con.createStatement();
+		
+		ResultSet rs;
+		rs = stmt.executeQuery("");
+		
+		if(rs.next()){
+			%>
+			<div style="color: white;">
+				Back to <a href='LandingPage.jsp'
+					style="color: white; text-decoration: none">Search</a>
+			</div>
+			<%
+		} else{
+			int x = stmt.getResultSet();
+			
+		}
+	%>
+	</div>
+
+
+
+
 
 	<script>
-		function toggleDropdown(dropdownId) {
+		/* function toggleDropdown(dropdownId) {
 			document.getElementById(dropdownId).classList.toggle('show');
 		}
 
@@ -165,17 +199,13 @@
 				}
 			};
 			xhr.send(key + '=' + encodeURIComponent(value));
-		}
+		} */
 
 		function search() {
 			// Get values from input fields and dropdowns
-			var departureCity = document.getElementById('departureCity').value;
-			var destinationCity = document.getElementById('destinationCity').value;
-			var departureDate = document.getElementById('departureDate').value;
-			var returnDate = document.getElementById('returnDate').value;
-			var tripType = document.getElementById('tripTypeDropdown').innerText;
-			var travelClass = document.getElementById('classDropdown').innerText;
-
+			
+			
+			
 			// Validate the input if needed
 
 			// Redirect to the search servlet or page with query parameters
