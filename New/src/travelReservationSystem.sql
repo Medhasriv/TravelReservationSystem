@@ -37,10 +37,10 @@ PRIMARY KEY (`username`)
 -- LOCK TABLES `users` WRITE;
 -- /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 -- INSERT INTO `users` VALUES 
--- ('uriowpjl751@yhn.com', 		321642321 , '2022-08-13' , 0, 'Justine Emilia', 'password'),
--- ('jfdksalbdv4321798@yhn.com', 	213590253 , '2022-08-13' , 0, 'Brigitte Mafalda', 'passworda'),
--- ('dhasjklg12352@yhn.com', 		721895063 , '2022-08-13' , 0, 'Hortensia Matilde', 'passwordb'),
--- ('fdsakl12334@yhn.com',			712385909 , '2022-08-13' , 0, 'Eseoghene Helene', 'passwordc');
+-- ('user123',  'password',	321642321 , '2022-08-13', 'Justine Emilia','uriowpjl751@yhn.com',),
+-- ('user124',  'passworda',	213590253 , '2022-08-13', 'Brigitte Mafalda','jfdksalbdv4321798@yhn.com',),
+-- ('user126',  'passwordb',	721895063 , '2022-08-13', 'Hortensia Matilde','dhasjklg12352@yhn.com',),
+-- ('user127', 'passwordc',	712385909 , '2022-08-13', 'Eseoghene Helene','fdsakl12334@yhn.com',);
 -- /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 -- UNLOCK TABLES;
 
@@ -85,15 +85,15 @@ CREATE TABLE `Airport` (
 PRIMARY KEY (`AirportID`) 
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- LOCK TABLES `Airport` WRITE;
--- /*!40000 ALTER TABLE `Airport` DISABLE KEYS */;
--- INSERT INTO `Airport` VALUES 
--- ('Greenland Waypoint'),
--- ('Holland International'),
--- ('Utah State'),
--- ('Phoenix Sky Harbor');
--- /*!40000 ALTER TABLE `Airport` ENABLE KEYS */;
--- UNLOCK TABLES;
+ LOCK TABLES `Airport` WRITE;
+ /*!40000 ALTER TABLE `Airport` DISABLE KEYS */;
+ INSERT INTO `Airport` VALUES 
+ ('Greenland Waypoint'),
+ ('Holland International'),
+ ('Utah State'),
+ ('Phoenix Sky Harbor');
+ /*!40000 ALTER TABLE `Airport` ENABLE KEYS */;
+ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Ticket`;
 CREATE TABLE `Ticket` (
@@ -108,19 +108,19 @@ CREATE TABLE `Ticket` (
 `TotalPrice` int NOT NULL DEFAULT 0,
 `Class` varchar(20) NOT NULL DEFAULT '',
 PRIMARY KEY (`username`, `ticketNumber`),
-FOREIGN KEY (`username`) REFERENCES `users`(`username`),
+FOREIGN KEY (`username`, `PassengerName`) REFERENCES `users`(`username`, `name`),
 INDEX idx_ticketNumber(`ticketNumber`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- LOCK TABLES `Ticket` WRITE;
--- /*!40000 ALTER TABLE `Ticket` DISABLE KEYS */;
--- INSERT INTO `Ticket` VALUES 
--- ("", 56317, '124256', '2022-08-13', 'First', ),
--- ("", 71893, '126525', '2022-08-13', 'Business', ),
--- ("", 62978, '124325', '2022-08-13', 'Economy', ),
--- ("", 65327, '174325', '2022-08-13', 'Economy', );
--- /*!40000 ALTER TABLE `Ticket` ENABLE KEYS */;
--- UNLOCK TABLES;
+ LOCK TABLES `Ticket` WRITE;
+ /*!40000 ALTER TABLE `Ticket` DISABLE KEYS */;
+ INSERT INTO `Ticket` VALUES 
+ ('user123', 56317, '124256', '2022-08-13', 'First', ),
+ ('user124', 71893, '126525', '2022-08-13', 'Business', ),
+ ('user126', 62978, '124325', '2022-08-13', 'Economy', ),
+ ('user127', 65327, '174325', '2022-08-13', 'Economy', );
+ /*!40000 ALTER TABLE `Ticket` ENABLE KEYS */;
+ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Sells`;
 CREATE TABLE `Sells` (
@@ -130,15 +130,15 @@ FOREIGN KEY(`TicketNumber`) REFERENCES `Ticket`(`TicketNumber`),
 FOREIGN KEY (`AirportID`) REFERENCES `Airport`(`AirportID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- LOCK TABLES `Airport` WRITE;
--- /*!40000 ALTER TABLE `Airport` DISABLE KEYS */;
--- INSERT INTO `Airport` VALUES 
--- ('Greenland Waypoint', 56317),
--- ('Holland International', 71893),
--- ('Utah State', 62978),
--- ('Phoenix Sky Harbor', 65327);
--- /*!40000 ALTER TABLE `Airport` ENABLE KEYS */;
--- UNLOCK TABLES;
+ LOCK TABLES `Airport` WRITE;
+ /*!40000 ALTER TABLE `Airport` DISABLE KEYS */;
+ INSERT INTO `Airport` VALUES 
+ ('Greenland Waypoint', 56317),
+ ('Holland International', 71893),
+ ('Utah State', 62978),
+ ('Phoenix Sky Harbor', 65327);
+ /*!40000 ALTER TABLE `Airport` ENABLE KEYS */;
+ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Buy`;
 CREATE TABLE `Buy` (
