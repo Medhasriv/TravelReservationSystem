@@ -115,10 +115,10 @@ INDEX idx_ticketNumber(`ticketNumber`)
  LOCK TABLES `Ticket` WRITE;
  /*!40000 ALTER TABLE `Ticket` DISABLE KEYS */;
  INSERT INTO `Ticket` VALUES 
- ('user123', 56317, '124256', '2022-08-13', 'First', ),
- ('user124', 71893, '126525', '2022-08-13', 'Business', ),
- ('user126', 62978, '124325', '2022-08-13', 'Economy', ),
- ('user127', 65327, '174325', '2022-08-13', 'Economy', );
+ ('user123', 56317, '124256',, '2022-08-13', 'First', ),
+ ('user124', 71893, '126525',, '2022-08-13', 'Business', ),
+ ('user126', 62978, '124325',, '2022-08-13', 'Economy', ),
+ ('user127', 65327, '174325',, '2022-08-13', 'Economy', );
  /*!40000 ALTER TABLE `Ticket` ENABLE KEYS */;
  UNLOCK TABLES;
 
