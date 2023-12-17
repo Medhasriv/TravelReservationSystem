@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+
+@font-face{
+  font-family: Freeroad;
+  src:url(Freeroadn.ttf);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+/*  justify-content: center;*/
+  align-items: center;
+  background: rgb(46, 52, 56);
+}
+.bigtext{
+  font-family: Freeroad;
+}
+
+.nav-1{
+  background: rgb(0, 30, 44) ;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+
+.title{
+  color: white;
+  font-family: Freeroad ;
+  font-size: 60px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  
+}
+a.title{
+  text-decoration: none;
+  
+}
+
+.greet{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: Freeroad ;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  margin-left: 0px;
+  
+}
+
+.title2{
+  color: white;
+  font-family: Freeroad ;
+  font-size: 30px;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+
+}
+
+
+.nav-3{
+  background: white ;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  height: 40px;
+}
+
+
+.nav-4{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 600px;
+  background: rgb(0,84,180);
+
+}
+.nav-5{
+  display: flex;
+  width: 90%;
+  height: 80%;
+  background: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.b1{
+  width: 1000%;
+  height: 20%;
+  font-family: Freeroad;
+  font-size: 50px;
+  padding-left: 30px;
+  padding-top: 45px;
+  padding-bottom: 150px;
+}
+
+.total{
+  font-family: Freeroad;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  font-size: 20px;
+}
+
+.bottomStuff{
+	width:100%;
+	
+}
+
+.PurchaseB {
+background: rgb(0, 84, 180);
+  width: 120px;
+  height: 100%;
+  color: white;
+  font-family: Freeroad;
+  margin-left: 70%;
+  font-size: 90%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.allthestuff{
+	padding-bottom: 10%;
+}

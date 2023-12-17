@@ -25,20 +25,24 @@
 	</head>
 	<body>
 	    <div class="tripComponent">
-	        <h2><%= trip.tripHeader() %></h2>
-	        <p>Number of Stops: <%= trip.getNumStops() %></p>
+		    <%
+			Trip tripDisp = (Trip) session.getAttribute("TripCart");
+			%>
+	        <h2><%= tripDisp.tripHeader() %></h2>
+	        <p>Number of Stops: <%= tripDisp.getNumStops() %></p>
 	        <div class="flights-list">
 	            <h3>Flights</h3>
 	            <ul class="flight-items">
 	                <% 
 	                ArrayList<Flight> Tripflights = trip.getFlights();
-	                for (Flight flight : Tripflights) { 
+	                for (Flight flightz : Tripflights) { 
+	                    %>
+	                        <li>Flight <%= flightz.getflightNo() %>: <br>
+	                            <%= flightz.departTimeToString() %> - <%= flightz.getdepartLocation() %> <br>
+	                            <%= flightz.arrivalTimeToString() %> - <%= flightz.getarriveLocation() %></li>
+	                <% 
+	                }
 	                %>
-	                    <li>Flight <%= flight.getflightNo() %>: <br>
-	                    	<%= flight.departTimeToString() %> - <%= flight.getdepartLocation() %> <br>
-	                    	<%= flight.arrivalTimeToString() %> - <%= flight.getarriveLocation() %></li>
-	                <br>
-	                <% } %>
 	            </ul>
 	        </div>
 	    </div>

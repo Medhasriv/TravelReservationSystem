@@ -84,7 +84,7 @@ a.title{
   align-items: center;
   color: black;
   font-size: 20px;
-  height: 30px;
+  height: 60px;
   border-bottom: 1px solid rgb(221,227,234);
 }
 
@@ -101,7 +101,6 @@ a.title{
   font-size: 20px;
   height: 40px;
 }
-
 
 
 
@@ -333,7 +332,7 @@ a.title{
   align-items: center;
   width: 90%;
   height: 400px;
-  background: rgb(0,84,180);
+  background: rgb(47, 52, 56);
 
 }
 .nav-5{
@@ -355,11 +354,11 @@ a.title{
 }
 .nav-7{
   display: flex;
-  width: 30%;
+  width: 90%;
   height: 15%;
   background: white;
   font-family: Freeroad;
-  font-size: 15px;
+  font-size: 35px;
   padding-left: 15px;
   padding-top: 20px;
 }
@@ -371,7 +370,6 @@ a.title{
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .des{
@@ -424,15 +422,19 @@ input{
 }
 
 
-/*button {
+
+
+
+
+
+
+button {
   background: none;
   color: black;
   padding-bottom: 30px;
   border-radius: 5px;   
   border: 1px solid white; 
-}*/
-
-
+}
 .nav-8{
   display: flex;
   width: 100%;
@@ -440,7 +442,6 @@ input{
   background: white;
   font-family: Freeroad;
   font-size: 35px;
-  padding-top: 10px;
 }
 
 .nav-9{
@@ -454,57 +455,17 @@ input{
   align-items: center;
 }
 
+
+
 .search {
   background: rgb(0, 84, 180);
-  width: 20%;
-  height: 100%;
+  width: 30%;
+  height: 50%;
   justify-content: center;
-  padding: 20px;
+  padding-top: 15px;
   color: white;
   font-family: Freeroad;
   margin-left: auto;   
   margin-right: 20px; 
-  padding-bottom: 3%;
 }
 
-
- /* Dropdown Button */
-.dropbtn {
-  background: rgb(0, 84, 180);
-  color: white;
-  padding: 14px;
-  font-size: 14px;
-  border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  height: 10%;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-
-.dropdown:hover .dropdown-content {display: block;}

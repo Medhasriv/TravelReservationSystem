@@ -65,7 +65,7 @@
 		<div class="op8">
 			<a href="../TripsPage/TripsPage.jsp">Trips</a>
 		</div>
-		<div class="op9">Cart</div>
+		<div class="op9"><a href="../CartPage/CartPage.jsp">Cart</a></div>
 	</div>
 	<div class="nav-3"></div>
 	<div class="nav-4">

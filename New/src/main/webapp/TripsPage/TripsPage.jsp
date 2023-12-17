@@ -65,14 +65,14 @@
 	        <div class = "op6"></div>
 	        <div class = "op7"><a href="../ProfilePage/ProfilePage.jsp">Profile</a></div>
 	        <div class = "op8"><a href="../TripsPage/TripsPage.jsp">Trips</a></div>
-	        <div class = "op9">Cart</div>
+			<div class="op9"><a href="../CartPage/CartPage.jsp">Cart</a></div>
 	    </div>
 	    
 	    <div class = "nav-3"></div>
 	    <div class = "nav-4">
 		<div class = "nav-5">
-			<div class="horizontal-line"></div>
-			<div class = "b1a">Your Trips</div> 
+<!-- 			<div class="horizontal-line"></div> -->
+			<%-- <div class = "b1a">Your Trips</div> 
 			
 			<%
 			    // Example usage
@@ -90,7 +90,7 @@
 			
 			    Trip sampleTrip = new Trip(flights);
 			    request.setAttribute("trip", sampleTrip);
-			%>
+			%> --%>
 			
 			
 			<div class=displayTripComponents>

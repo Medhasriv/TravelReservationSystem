@@ -14,10 +14,13 @@ public class Flight{
 	 
 	int numSeats;
 	int durationMin;
-	double price;
+	float price;
 	String airlinecompany;
 	
-	public Flight(String flightNo , LocalDateTime departDateTime, LocalDateTime arriveDateTime, String departLocation, String arriveLocation, int numSeats, int durationMin, double price, String airlinecompany) {
+	public Flight(String flightNo , LocalDateTime departDateTime, 
+				LocalDateTime arriveDateTime, String departLocation, 
+				String arriveLocation, int numSeats, int durationMin, 
+				float price, String airlinecompany) {
 		this.flightNo = flightNo;
 		
 		this.departDateTime = departDateTime;
@@ -60,5 +63,19 @@ public class Flight{
 	public String departTimeToString() {
 		return departDateTime.toString().replace("T", " ");
 	}
+	
+	public String getAirlineCompany() {
+		return airlinecompany;
+	}
+	
+	public float getPrice() {
+		return price;
+	}
+	
+	public String getPriceStr() {
+		return String.valueOf(price);
+	}
 }
+
+	
 	

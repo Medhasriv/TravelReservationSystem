@@ -37,6 +37,7 @@
 
     <div class="Create-Box">
         <a href="../CreateAccountPage/CreateAccount.jsp" class="create">Create Online Account</a>
+        <a href="../Admin/AdminLogin.jsp" class="create2">Admin</a>
     </div>
 
 </body>

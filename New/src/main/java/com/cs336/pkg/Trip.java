@@ -4,7 +4,7 @@ import java.util.ArrayList;
 //import java.util.List;
 
 public class Trip{
-	private ArrayList<Flight> flights;
+	ArrayList<Flight> flights;
 	int numStops;
 	
 	public Trip(ArrayList<Flight> flights) {
@@ -17,9 +17,10 @@ public class Trip{
 		this.numStops = 0; 
 	}
 	
-	public void addFlight(Flight f) {
+	public String addFlight(Flight f) {
 		flights.add(f);
 		this.numStops = (flights.size()-1); 
+		return "";
 	}
 	
 	public ArrayList<Flight> getFlights() {
@@ -38,5 +39,18 @@ public class Trip{
 		String endLocation = this.getFlights().get(this.flights.size()-1).arriveLocation;
 		return (startLocation + " - " + endLocation);
 	}
+	public Trip getTrip() {
+		return this;
+	}
+	public double totalPrice() {
+		double totalPrice = 0.00;
+		for(Flight flight: this.flights) {
+			totalPrice+=flight.price;
+		}
+		return totalPrice;
+	}
 	
+	public void setFlights(ArrayList<Flight> f) {
+		this.flights = f;
+	}
 }
